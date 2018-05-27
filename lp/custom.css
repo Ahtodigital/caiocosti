@@ -1,0 +1,20 @@
+#diagonal-inferior {
+	width: 0;
+	height: 0;
+	border-bottom: 30vh solid #2E6B99;
+	border-right: 100vw solid transparent;
+	position: absolute;
+	bottom: -17px;
+}
+
+.bg-custom {
+	background-color: #2E6B99;
+}
+
+.bg-custom2 {
+	background-color: #F7F7FC;
+}
+
+.txt-custom {
+	color: #2E6B99;
+}
