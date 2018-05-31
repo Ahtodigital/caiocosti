@@ -15,6 +15,21 @@
 	background-color: #F7F7FC;
 }
 
+.cta {
+	background-color: #A9F255;
+	border: none;
+	border-radius: 50px;
+	width: 60%;
+	font-size: 14px;
+	height: 45px;
+}
+
 .txt-custom {
 	color: #2E6B99;
 }
+
+.material-icons {
+    font-size: 10vw;
+    text-align: center;
+}
+
