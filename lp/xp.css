@@ -232,7 +232,7 @@ h3 {
 }
 
 .bg-intro {
-	background: url('img/caioso.jpg') no-repeat center center;
+	background-color: var(--dark);
 	background-size: cover;
 }
 
