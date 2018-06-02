@@ -4,7 +4,7 @@
 	border-bottom: 30vh solid #2E6B99;
 	border-right: 100vw solid transparent;
 	position: absolute;
-	bottom: -17px;
+	bottom: 0;
 }
 
 .bg-custom {
@@ -20,16 +20,62 @@
 	border: none;
 	border-radius: 50px;
 	width: 60%;
-	font-size: 14px;
+	font-size: 16px;
 	height: 45px;
+	cursor: pointer;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#bottom-grid{
+	display: grid;
+	grid-template-areas:
+		'left right';
+	grid-gap: 0;
+	height: 70vh;
+	background-color: #3DA6CC;
 }
 
 .txt-custom {
 	color: #2E6B99;
 }
 
-.material-icons {
+.material-icons, .fa {
     font-size: 10vw;
+		color: #3DA6CC;
     text-align: center;
 }
 
+.left {
+	height: 100%;
+	width: 50vw;
+	grid-area: left;
+  padding: 10%;
+}
+.right {
+	height: 100%;
+	width: 50vw;
+	grid-area: right;
+}
+
+
+
+@media (max-width: 960px) {
+	#bottom-grid{
+		grid-template-areas: 'left' 'right';
+		height: 100vh;
+	}
+
+	.left {
+		height: 100%;
+		width: 100vw;
+		grid-area: left;
+	  padding: 10%;
+		text-align: center;
+	}
+	.right {
+		height: 100%;
+		width: 100vw;
+		grid-area: right;
+	}
+}
