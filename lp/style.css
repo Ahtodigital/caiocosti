@@ -1,0 +1,428 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: var(--dark);
+	transition: all 300ms;
+	font-weight: 300;
+	letter-spacing: 0.033em;
+	/*	border: 1px solid red;*/
+}
+
+a {
+	display: block;
+	cursor: pointer;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
+
+:root {
+	--brand-primary: #396C99;
+	--brand-secondary: #55BAE6;
+	--brand-terceary: #A9F255;																																															
+	--white: #fff;
+	--dark: #000;
+	--light: #F5F5FA;
+	--whatsapp: #25D366;
+}
+
+html,
+body {
+	display: grid;
+	width: 100%;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+}
+
+
+/* === Grid Mobile === */
+
+section,
+.grid {
+	display: grid;
+}
+
+.wrap {
+	display: grid;
+	width: 100%;
+	max-width: 88vw;
+	margin: 6vh 6vw;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+}
+
+.grid,
+.wrap,
+.um,
+.dois,
+.tres,
+.quatro {
+	display: grid;
+	grid-gap: 1em;
+	grid-auto-rows: auto;
+}
+
+.um {
+	grid-template-columns: 1fr;
+}
+
+.dois {
+	grid-template-columns: 1fr 1fr;
+}
+
+.tres {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quatro {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+	padding: 6vw;
+	grid-gap: 1em !important;
+	border-radius: 1em;
+}
+
+.card-header {
+	display: grid;
+	grid-template-columns: 1fr 64px;
+}
+
+.card-header i {
+	font-size: 3em;
+	justify-self: end;
+}
+
+.galeria {
+	grid-gap: 0 !important;
+}
+
+/* === UI Helpers === */
+
+.fullscreen {
+	grid-auto-rows: minmax(100vh, auto); 
+}
+
+.contato {
+	display: block;
+	z-index: 99;
+	position: fixed;
+	right: 2em;
+	bottom: 2em;
+	background-color: var(--whatsapp);
+	border-radius: 24px;
+	width: 3em;
+	height: 3em;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.contato a {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.contato a img {
+	width: 1.5em;
+}
+
+
+
+.fluid {
+	width: 100%;
+}
+
+.center-self {
+	align-self: center;
+	justify-self: center;
+}
+
+.end-self {
+	align-self: end;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.middle-y {
+	align-self: center;
+}
+
+.middle-x {
+	justify-self: center;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.shadow {
+	box-shadow: 0px 3px 6px 0px rgba(21,22,26,0.33);
+}
+
+.magic-padding {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+
+/* === Tipografia === */
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+.txt-white {
+	color: #fff;
+}
+
+.txt-dark {
+	color: var(--dark);
+}
+
+.txt-brand-primary {
+	color: var(--brand-primary);
+}
+
+.txt-center {
+	text-align: center;
+}
+
+
+
+/* === Buttons === */
+
+.btn,
+.icon-btn {
+	display: block;
+	border: none;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 1em 3em;
+	border-radius: 4em;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.icon-btn {
+	display: grid;
+}
+
+a {
+	color: #fff;
+}
+
+.btn-dark-light {
+	color: var(--white)/
+	background-color: var(--dark-light);
+}
+
+.btn-brand-primary {
+	color: var(--white);
+	background-color: var(--brand-primary);
+}
+
+.btn-brand-secondary {
+	color: var(--dark);
+	background-color: var(--brand-secondary);
+}
+
+.btn-brand-terceary {
+	color: var(--dark);
+	background-color: var(--brand-terceary);
+}
+
+
+
+/* === Backgrounds === */
+
+.bg-brand-primary {
+	background-color: var(--brand-primary);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.bg-light {
+	background-color: var(--light);
+}
+
+.bg-brand-secondary {
+	background-color: var(--brand-secondary);
+}
+
+.bg-brand-terceary {
+	background-color: var(--brand-terceary);
+}
+
+/* === Personalisados === */
+
+.logo {
+	display: grid;
+	grid-template-columns: 8em 1fr;
+}
+
+.display1 {
+	font-weight: 500;
+}
+
+.card img {
+	padding: 25%;
+}
+
+
+.bg-intro {
+	background: url('img/psicologo-e-gestalt-terapeura-caio-costi.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.arrow-left {
+	width: 1em;
+	position: fixed;
+	z-index: 99;
+	margin-left: 4vw;
+	top: 50%;
+}
+
+.arrow-right {
+	width: 16px;
+	position: fixed;
+	z-index: 99;
+	margin-right: 4vw;
+	top: 50%;
+	right: 0;
+}
+
+/* === Animações === */
+
+.move {
+	animation: move 2s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+	from { transform: translate(0, 16px); }
+	to   { transform: translate(0, -16px); }
+}
+
+
+/* === Media Queries === */
+
+@media (min-width: 960px) {
+
+	.wrap {
+		max-width: 80vw;
+		margin: 20vh 10vw;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	.grid,
+	.wrap,
+	.um,
+	.dois,
+	.tres,
+	.quatro {
+		grid-gap: 2em;
+	}
+
+	.l-dois {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.l-tres {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.l-quatro {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.l-center {
+		align-self: center;
+		justify-self: center;
+	}
+
+	.l-middle-y {
+		align-self: center;
+	}
+
+
+	.l-show {
+		display: block;
+	}
+
+	.l-hide {
+		display: none;
+	}
+
+	.l-middle-y {
+		align-items: center;
+	}
+
+	.card {
+		padding: 3vw;
+	}
+
+	.magic-padding {
+		padding-left: 3vw;
+		padding-right: 3vw;
+	}
+
+	.btn,
+	.icon-btn {
+		padding: 1.5em 3em;
+	}
+
+	.logo {
+		display: grid;
+		grid-template-columns: 12em 1fr;
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	.wrap {
+		max-width: 60vw;
+		margin: 20vh 20vw;
+	}
+
+
+
+}
