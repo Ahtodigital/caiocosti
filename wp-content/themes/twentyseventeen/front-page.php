@@ -11,7 +11,9 @@
  * @since 1.0
  * @version 1.0
  */
-
+$location = get_site_url() . "/lp";
+wp_redirect( $location, 301 );
+exit;    
 get_header(); ?>
 
 <div id="primary" class="content-area">
